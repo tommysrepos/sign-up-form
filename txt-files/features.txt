@@ -1,0 +1,5 @@
+Features I'd like to include in this project.
+    1. SVG images
+    2. CSS variables
+    3. possibly light/dark mode
+    4.

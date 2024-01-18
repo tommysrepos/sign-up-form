@@ -1,7 +1,24 @@
+:root{
+    --background: url("images/vecteezy_simple-vector-background-with-turquoise-dominant-color_9743020.jpg");
+    --bg-position: center center;
+    --bg-size: cover;
+    --border-theme: white white lightblue lightblue;
+    --main-color: whitesmoke;
+    --alt-color: blue;
+    --hover-color: #0066ff;
+    --text-color: black;
+}
+
+/* :root{
+    --background: url("images/vecteezy_aesthetic-background-illustrations-of-clouds-stars-and-sky_21583370-1.jpg");
+    --bg-position: center center;
+    --bg-size: cover;
+} */
+
 body{
-    background-image: url("images/vecteezy_simple-vector-background-with-turquoise-dominant-color_9743020.jpg");
-    background-position: center center;
-    background-size: cover;
+    background-image: var(--background);
+    background-position: var(--bg-position);
+    background-size: var(--bg-size);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -19,7 +36,7 @@ main{
     min-width: 60vh;
     min-height: 60vh;
     border: solid 0.25rem;
-    border-color: white white lightblue lightblue;
+    border-color: var(--border-theme);
     border-radius: 25px;
 }
 
@@ -61,13 +78,13 @@ main{
 }
 
 h1{
-    color: whitesmoke;
+    color: var(--main-color);
     font-size: 2rem;
     font-weight: bolder;
 }
 
 p{
-    color: black;
+    color: var(--text-color);
     font-size: 0.75rem;
 }
 
@@ -87,7 +104,7 @@ p{
 }
 
 svg{
-    fill: whitesmoke;
+    fill: var(--main-color);
     padding-right: 1rem;
 }
 
@@ -96,11 +113,11 @@ input{
     background: transparent;
     width: 12rem;
     border: none;
-    border-bottom: solid 0.1rem whitesmoke;
+    border-bottom: solid 0.1rem var(--main-color);
 }
 
 ::placeholder{
-    color: whitesmoke;
+    color: var(--main-color);
 }
 
 #plane-image{
@@ -108,16 +125,16 @@ input{
 }
 
 #submit{
-    background-color: blue;
-    color: whitesmoke;
-    border: solid 0.1rem blue;
+    background-color: var(--alt-color);
+    color: var(--main-color);
+    border: solid 0.1rem var(--alt-color);
     border-radius: 25px;
     padding: 0.5rem;
 }
 
 #submit:hover{
-    background-color: #0066ff;
-    border-color: #0066ff;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
 }
 
 #sign-in-or-sign-up{
@@ -126,9 +143,9 @@ input{
 
 #sign-in{
     text-decoration: none;
-    color: blue;
+    color: var(--alt-color);
 }
 
 #sign-in:hover{
-    color: #0066ff;
+    color: var(--hover-color);
 }

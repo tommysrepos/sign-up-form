@@ -1,0 +1,134 @@
+body{
+    background-image: url("images/vecteezy_simple-vector-background-with-turquoise-dominant-color_9743020.jpg");
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60vh;
+    min-height: 60vh;
+    border: solid 0.25rem;
+    border-color: white white lightblue lightblue;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width:768px) {
+
+    main{
+        align-items: flex-start;
+    }
+
+    #content{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 97vh;
+    }
+    img{
+        max-height: 22vh;
+        max-width: auto;
+    }
+    .user-input{
+        height: 3rem;
+    }
+
+    #form-container{
+        width: 50vh;
+    }
+
+    input{
+        min-width: 100%;
+    }
+
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+p{
+    color: black;
+    font-size: 0.75rem;
+}
+
+#sign-up-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.user-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+svg{
+    fill: whitesmoke;
+    padding-right: 1rem;
+}
+
+input{
+    height: 2rem;
+    background: transparent;
+    width: 12rem;
+    border: none;
+    border-bottom: solid 0.1rem whitesmoke;
+}
+
+::placeholder{
+    color: whitesmoke;
+}
+
+#plane-image{
+    height: 20rem;
+}
+
+#submit{
+    background-color: blue;
+    color: whitesmoke;
+    border: solid 0.1rem blue;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+#submit:hover{
+    background-color: #0066ff;
+    border-color: #0066ff;
+}
+
+#sign-in-or-sign-up{
+    flex-direction: column;
+}
+
+#sign-in{
+    text-decoration: none;
+    color: blue;
+}
+
+#sign-in:hover{
+    color: #0066ff;
+}

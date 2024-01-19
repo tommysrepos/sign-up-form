@@ -8,6 +8,12 @@
     --hover-color: #0066ff;
     --text-color: black;
     --invalid-color:red;
+    --password-meter: gray;
+    --weak: red;
+    --medium: orange;
+    --good: yellow;
+    --great: green;
+    
 }
 
 /* :root{
@@ -158,4 +164,33 @@ input{
 
 .invalid-entry{
     border-bottom: solid 0.1rem var(--invalid-color);
+}
+
+#security-container{
+    display: flex;
+    justify-content: end;
+}
+
+.password-strength{
+    background-color:var(--password-meter);
+    height: 0.2rem;
+    margin: 0.25rem;
+    width: 10%;
+    border-radius: 25px;
+}
+
+.weak{
+    background-color: var(--weak);
+}
+
+.medium{
+    background-color: var(--medium);
+}
+
+.good{
+    background-color: var(--good);
+}
+
+.great{
+    background-color: var(--great);
 }

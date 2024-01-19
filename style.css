@@ -7,12 +7,18 @@
     --alt-color: blue;
     --hover-color: #0066ff;
     --text-color: black;
+    --invalid-color:red;
 }
 
 /* :root{
     --background: url("images/vecteezy_aesthetic-background-illustrations-of-clouds-stars-and-sky_21583370-1.jpg");
     --bg-position: center center;
     --bg-size: cover;
+    --border-theme: white white lightblue lightblue;
+    --main-color: whitesmoke;
+    --alt-color: blue;
+    --hover-color: #0066ff;
+    --text-color: black;
 } */
 
 body{
@@ -148,4 +154,8 @@ input{
 
 #sign-in:hover{
     color: var(--hover-color);
+}
+
+.invalid-entry{
+    border-bottom: solid 0.1rem var(--invalid-color);
 }

@@ -1,4 +1,4 @@
-:root{
+:root.light{
     --background: url("images/vecteezy_simple-vector-background-with-turquoise-dominant-color_9743020.jpg");
     --bg-position: center center;
     --bg-size: cover;
@@ -13,19 +13,24 @@
     --medium: orange;
     --good: yellow;
     --great: green;
-    
-}
+} 
 
-/* :root{
+:root.dark{
     --background: url("images/vecteezy_aesthetic-background-illustrations-of-clouds-stars-and-sky_21583370-1.jpg");
-    --bg-position: center center;
+   --bg-position: center center;
     --bg-size: cover;
-    --border-theme: white white lightblue lightblue;
+    --border-theme: lightgray lightgray #993399 #993399;
     --main-color: whitesmoke;
-    --alt-color: blue;
-    --hover-color: #0066ff;
+    --alt-color: #993399;
+    --hover-color: #ac39ac;
     --text-color: black;
-} */
+    --invalid-color:red;
+    --password-meter: lightgray;
+    --weak: red;
+    --medium: orange;
+    --good: yellow;
+    --great: green;
+}
 
 body{
     background-image: var(--background);
@@ -52,6 +57,23 @@ main{
     border-radius: 25px;
 }
 
+#title{
+    display: flex;
+}
+
+#theme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+#theme{
+    background-color: none;
+    background: none;
+    width: 2.5rem;
+    border: none;
+}
+
 @media only screen and (max-width:768px) {
 
     main{
@@ -63,6 +85,7 @@ main{
         justify-content: flex-start;
         align-items: center;
         height: 97vh;
+        border: none;
     }
     img{
         max-height: 22vh;
